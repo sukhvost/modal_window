@@ -16,6 +16,11 @@
     }
 }
 
+iframe {
+    width: 600px;
+    height: 450px;
+}
+
 .layer {
     display: block;
     position: fixed;
@@ -27,7 +32,7 @@
     background: rgba($color: #000000, $alpha: .4);
     .my_modal {
         position: relative;
-        width: 220px;
+        width: fit-content;
         background: rgba($color: #000000, $alpha: .8);
         padding: 1rem;
         border-radius: 5px;
@@ -46,13 +51,6 @@
             line-height: 100%;
             color: red;
             cursor: pointer;
-        }
-        &_header {}
-        &_content {}
-        &_footer {
-            .btn {}
-            .btn-success {}
-            .btn-danger {}
         }
     }
 }
